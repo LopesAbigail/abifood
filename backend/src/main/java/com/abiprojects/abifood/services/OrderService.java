@@ -36,7 +36,7 @@ public class OrderService {
 		return orderList.stream().map(order -> new OrderDTO(order)).collect(Collectors.toUnmodifiableList());
 	}
 	
-	@Transactional()
+	@Transactional
 	public OrderDTO insert(OrderDTO dto){
 	
 		Order order = new Order(null, dto.getAddress(), dto.getLatitude(), dto.getLongitude(),
@@ -55,6 +55,14 @@ public class OrderService {
 		
 		order = ordertRepository.save(order);
 		
+		return new OrderDTO(order);
+	}
+	
+	@Transactional
+	public OrderDTO setDelivered(Long id){
+		Order order = ordertRepository.getOne(id);
+		order.setStatus(OrderStatus.DELIVERED);
+		order = ordertRepository.save(order);
 		return new OrderDTO(order);
 		
 	}
