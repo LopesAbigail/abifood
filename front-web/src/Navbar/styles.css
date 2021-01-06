@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap');
 .main-navbar {
     background-color: #DA5C5C;
     height: 70px;
@@ -8,6 +9,7 @@
 }
 
 .logo-text {
+    font-family: 'Poly', sans-serif;
     font-style: italic;
     font-size: 35px;
     line-height: 33px;

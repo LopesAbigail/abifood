@@ -1,11 +1,14 @@
 import Navbar from "./Navbar";
+import Home from "./Home";
 import './App.css'
 
 function App() {
   return (
-    <div>
+    //ReactFragment: não é retornado no HTML
+    <>
       <Navbar/>
-    </div>
+      <Home />
+    </>
   );
 }
 
