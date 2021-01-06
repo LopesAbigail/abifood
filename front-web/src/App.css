@@ -1,0 +1,33 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap');
+
+/*Disponível na raiz do app*/
+
+:root {
+    --primary-color: #da5c5c;
+    --primary-hover-color: #a74b4b;
+    --dark-color: #263238;
+    --secondary-color: #9E9E9E;
+    --light-color: #F5F5F5;
+}
+
+
+/*Resetando espaçamentos padrões*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poly', sans-serif;
+}
+
+
+/*Remove underline*/
+
+a {
+    text-decoration: none;
+}
