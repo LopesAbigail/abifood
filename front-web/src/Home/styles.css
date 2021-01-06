@@ -1,5 +1,6 @@
 .home-container {
     padding-top: 100px;
+    /*Calculo para eliminar barra de rolagem*/
     height: calc(100vh - 254px);
 }
 
@@ -14,7 +15,7 @@
 
 .home-title {
     font-weight: bold;
-    font-size: 55px;
+    font-size: 45px;
     line-height: 58px;
     letter-spacing: -0.015em;
     color: var(--dark-color);
@@ -23,7 +24,7 @@
 
 .home-subtitle {
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 33px;
     letter-spacing: -0.015em;
     color: var(--secondary-color);
@@ -33,14 +34,14 @@
 .home-btn-order {
     background-color: var(--primary-color);
     border-radius: 10px;
-    height: 70px;
-    width: 235px;
+    height: 50px;
+    width: 200px;
     display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: -0.015em;
     color: #FFF;
 }
@@ -51,10 +52,11 @@
 }
 
 .home-image svg {
-    width: 100%;
+    width: 80%;
+    background-size: over;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1365px) {
     .home-container {
         height: auto;
         margin-bottom: 50px;
@@ -64,6 +66,7 @@
     }
     .home-title {
         font-size: 40px;
+        text-align: center;
     }
     .home-subtitle {
         text-align: center;
