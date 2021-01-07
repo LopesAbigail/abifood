@@ -1,14 +1,11 @@
-import Navbar from "./Navbar";
-import Home from "./Home";
 import './App.css'
+import Routes from "./Routes";
 
 function App() {
   return (
-    //ReactFragment: não é retornado no HTML
-    <>
-      <Navbar/>
-      <Home />
-    </>
+  
+    <Routes />
+
   );
 }
 
