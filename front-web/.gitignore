@@ -27,3 +27,5 @@ yarn-error.log*
 # estudos
 hello.tsx
 counter.tsx
+
+.env
