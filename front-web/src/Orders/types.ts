@@ -11,3 +11,12 @@ export type OrderLocationData = {
     longitude: number;
     address: string;
 }
+
+type ProductId = {
+    id: number;
+}
+
+// Merge de OrderLocationData com ProductId
+export type OrderPayload = {
+    products: ProductId[];
+} & OrderLocationData;
