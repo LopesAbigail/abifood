@@ -1,12 +1,26 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 export default function Header() {
+
+  // Função especial do react 
+  const navigation = useNavigation();
+
+  const handleOnPress = () => {
+    navigation.navigate('Home');
+  }
+
+
   return (
-    <View style={styles.container}>
+    <TouchableWithoutFeedback onPress={handleOnPress}>
+      <View style={styles.container}>
         <Image source={require('../assets/icon.png')} />
         <Text style={styles.text}>AbiFood</Text>
-    </View>
+      </View>
+    </TouchableWithoutFeedback>
+    
   );
 }
 // CSS em JavaScript
